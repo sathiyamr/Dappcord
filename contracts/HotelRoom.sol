@@ -8,6 +8,7 @@ contract HotelRoom {
         Vacant,
         Occupied
     }
+    event Occupy(address _occupant, uint _value);
 
     Statuses public currentStatus;
 
@@ -33,8 +34,7 @@ contract HotelRoom {
 
     function book() public payable isNotOwner onlyVacant atleast2Ether(2 ether) {
         currentStatus = Statuses.Occupied;
+        emit Occupy(msg.sender, msg.value);
     }
-
-
 
 }

@@ -11,6 +11,25 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_occupant",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "Occupy",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "book",
 				"outputs": [],
@@ -72,11 +91,11 @@
 	},
 	"sources": {
 		"contracts/HotelRoom.sol": {
-			"keccak256": "0x56459e3259561f43a326cfa1283cb664a46684c0f68300d84c74161e24a801d7",
+			"keccak256": "0xf16fd817e3dd27fc324b75f7d6d7d963b6a0229c8c474aa8ec2feb88f0ffe8f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d64f87cbdbe285b390008d098e366618d9e9afe0cc296793794be519f0e8c12b",
-				"dweb:/ipfs/QmRK2yyinAsMR5H8M29gSR6hRe3ZtTiixhpfYdVYeHa8VW"
+				"bzz-raw://6e277726fcb0dc1ebb8f6cf01222ac0748e11c0e2ea000e367f151b7c9bff123",
+				"dweb:/ipfs/QmdMHn55cXRepmX58Qnb6KccouF7sqZsy3SZGY7cyXTasS"
 			]
 		}
 	},
